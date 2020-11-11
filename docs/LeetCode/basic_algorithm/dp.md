@@ -208,7 +208,7 @@ class Solution {
 > 问总共有多少条不同的路径？
 
 每一个位置只能从左边一格或者上方一格走到，所以动态方程为dp[i][j] = dp[i-1][j] + dp[i][j-1]
-又因为二维dp数组，可以被一维dp数组代替，之前的数据可以不保存，动态方程优化为dp[i]=dp[i]+d[i-1].
+又因为二维dp数组，可以被一维dp数组代替，之前的数据可以不保存，动态方程优化为dp[i]=dp[i]+dp[i-1].
 ```java
 class Solution {
     public int uniquePaths(int m, int n) {
